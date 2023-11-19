@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 //@SpringBootApplication
-@ComponentScan
+@ComponentScan(basePackages = "amigoscode")
+@EnableAutoConfiguration
 @RestController
 public class Main {
     public static void main(String[] args) {
